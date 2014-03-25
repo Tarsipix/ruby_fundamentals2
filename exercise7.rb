@@ -30,4 +30,9 @@ puts "\n5. Delete 2nd cohort and redisplay cohort hash"
 students.delete(:cohort2)
 print_hash(students)
 
-puts "\nBONUS: calculate the total amount of students in all cohorts by using each and incrementing a variable"
+print "\nBONUS: total num of students = "
+totalnumofstudents = 0
+students.each do |key,value|
+  totalnumofstudents += value
+end
+puts "#{totalnumofstudents}"
