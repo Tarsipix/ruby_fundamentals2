@@ -4,6 +4,8 @@ def print_list(list)
     puts "* #{item}"
   end
 end
+
+puts "1. print grocery_list with asterisk"
 print_list(grocery_list)
 grocery_list << "rice"
 
@@ -20,3 +22,10 @@ else
 end
 
 puts "\n5. The second item in the list is " + grocery_list[1].to_s
+
+puts "\n6. sort and print list"
+print_list(grocery_list.sort)
+
+puts "\n7. delete salmon and redisplay list"
+grocery_list.delete("salmon")
+print_list(grocery_list)
